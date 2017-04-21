@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>This is the Title of the page</title>
+<title> form tags, legend and fieldsets | Session 2 Assignment 2.2</title>
 </head>
 
 <body>
-<h1>This is body of the page</h1>
-<p> Anything within the body of a web page is displayed in the main browser window</p>
+
+<form name ='myform' method ='post' action ='abc.php'>
+<!-- Fieldset and legend for your details-->
+<fieldset>
+<legend> Your Details: </legend>
+<label> Name: <input type ='text' name ='txtName'></label><br/>
+<label> Email: <input type ='text' name ='txtemail'></label><br/>
+</fieldset>
+ 
+
+<!-- Fieldset and legend for your review -->
+<fieldset>
+
+<legend> Your Review: </legend>
+
+<!-- Html select tag -->
+<label> How do you hear about us? : 
+<select name ='refernces'>
+<option value = 'google' select >Google</option>
+<option value = 'friend' select >Friend</option>
+</select>
+</label>
+
+<br/>	
+
+<!-- Html input radio button tag -->
+
+<label> Would you visit agian?: 
+<input type='radio' name='visit' value='Yes'>
+<input type='radio' name='visit' value='No'>
+<input type='radio' name='visit' value='Maybe'>
+</label>
+
+<br/>
+
+<!-- Html text area tag -->
+
+<label> Comments: <br/> <textarea name ='txtComments'></textarea></label><br/>
+
+<!-- Html check box tag -->
+
+<label> <input type ='checkbox' name ='chkemail' checked> Sign me up for email updates</label><br/>
+
+<!-- Html Submit button tag -->
+
+<input type ='submit' name='submit' value='Submit review'><br/>
+
+
+</fieldset>
+
+</form>
 
 </body>
 </html>
